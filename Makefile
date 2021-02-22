@@ -4,3 +4,7 @@
 all:
 	gcc -g uname.c -o uname
 	gcc -g yes.c -o yes
+
+clean:
+
+	rm -rf yes uname
