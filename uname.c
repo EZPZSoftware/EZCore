@@ -1,5 +1,5 @@
 /*
-  unbloat - uname utility
+  EZCore - uname utility
   
   compliant to:
   https://pubs.opengroup.org/onlinepubs/9699919799/utilities/uname.html
