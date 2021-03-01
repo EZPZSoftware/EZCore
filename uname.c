@@ -92,6 +92,7 @@ int main(int argc, char **argv)
   length++;
   
   char string[length];
+  strcpy(string, "");
   
   if(option_a)
   {
