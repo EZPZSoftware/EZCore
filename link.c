@@ -7,6 +7,7 @@
 
 #include <errno.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
     case 2:
       fprintf(stderr, "%s: required parameter missing - file2\n",
               argv[0]);
-      usage();
+      usage(argv);
   }
 
   int status = 0;
