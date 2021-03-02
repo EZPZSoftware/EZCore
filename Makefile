@@ -9,7 +9,7 @@ UTILS := link \
 
 all:
 	$(CC) $(CFLAGS) link.c -o link
-  $(CC) $(CFLAGS) uname.c -o uname
+	$(CC) $(CFLAGS) uname.c -o uname
 	$(CC) $(CFLAGS) yes.c -o yes
 
 clean:
