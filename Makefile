@@ -3,11 +3,13 @@
 ## and Thomas Sirack <tsirack@gmail.com>
 
 CFLAGS := -g -Wall -O3
-UTILS := uname \
-	 yes
+UTILS := link \
+         uname \
+         yes
 
 all:
-	$(CC) $(CFLAGS) uname.c -o uname
+	$(CC) $(CFLAGS) link.c -o link
+  $(CC) $(CFLAGS) uname.c -o uname
 	$(CC) $(CFLAGS) yes.c -o yes
 
 clean:
