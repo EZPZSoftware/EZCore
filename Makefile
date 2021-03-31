@@ -1,4 +1,4 @@
-## Makefile for EZCore
+EZCore## Makefile for EZCore
 ## Made by ethancodes2020 <ethanatchley2006@gmail.com>
 ## and Thomas Sirack <tsirack@gmail.com>
 ## and Nikita Nikiforov (amdbtw) <efifb@yandex.ru>
@@ -6,7 +6,8 @@
 CFLAGS := -g -Wall -O2
 UTILS := link \
          uname \
-         yes
+         yes \
+	 chmod
 
 all:
 	$(CC) $(CFLAGS) link.c -o link
