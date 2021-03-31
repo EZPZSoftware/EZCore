@@ -10,10 +10,10 @@ UTILS := link \
 	 chmod
 
 all:
-	$(CC) $(CFLAGS) link.c -o link
-	$(CC) $(CFLAGS) uname.c -o uname
-	$(CC) $(CFLAGS) yes.c -o yes
-	$(CC) $(CFLAGS) chmod.c -o chmod
+	$(CC) $(CFLAGS) src/link.c -o link
+	$(CC) $(CFLAGS) src/uname.c -o uname
+	$(CC) $(CFLAGS) src/yes.c -o yes
+	$(CC) $(CFLAGS) src/chmod.c -o chmod
 
 clean:
 	rm -rf $(UTILS)
