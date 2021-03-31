@@ -11,28 +11,55 @@
 #include <string.h>
 #include <unistd.h>
 
+const char *options = "hv";
+
+short flag_verbose = 0;
+
 void usage(char **argv)
 {
-  fprintf(stderr, "Usage: %s file1 file2\n",
+  fprintf(stderr, "Usage: %s [-hv] file1 file2\n",
           argv[0]);
   exit(1);
 }
 
+void parse_args(int argc, char **argv)
+{
+  int c = 0;
+  while((c = getopt(argc, argv, options)) != -1)
+  {
+    switch(c)
+    {
+      case 'h':
+        usage(argv);
+        break; /* not reached */
+
+      case 'v':
+        flag_verbose = 1;
+        break;
+    }
+  }
+}
+
 int main(int argc, char **argv)
 {
-  switch(argc)
-  {
-    case 1:
-      usage(argv);
+  if(argc == 1)
+    usage(argv);
+  else
+    parse_args(argc, argv);
 
-    case 2:
-      fprintf(stderr, "%s: required parameter missing - file2\n",
-              argv[0]);
-      usage(argv);
+  if(!argv[optind + 1])
+  {
+    fprintf(stderr, "%s: required parameter missing\n", argv[0]);
+    exit(1);
   }
 
   int status = 0;
-  status = link(argv[1], argv[2]);
+  status = link(argv[optind], argv[optind + 1]);
+  if(flag_verbose)
+  {
+    printf("%s -> %s\n", argv[optind], argv[optind + 1]);
+  }
+
 
   if(status != 0)
   {
