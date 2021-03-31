@@ -185,6 +185,8 @@ mode_t parse_mode(char *filename, char *mode)
   if(is_already)
   {
     ret = strtoul(mode, 0, 8);
+    free(m);
+    return ret;
   }
 
   if(strlen(mode) == 9)
