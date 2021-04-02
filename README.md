@@ -18,4 +18,5 @@ $ make
 | `date`  | incomplete |
 | `link`  | complete |
 | `uname` | complete |
-| `yes`   | complete
+| `yes`   | complete |
+
