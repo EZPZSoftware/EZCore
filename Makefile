@@ -15,7 +15,7 @@ all:
 	$(CC) $(CFLAGS) src/uname.c -o uname
 	$(CC) $(CFLAGS) src/yes.c -o yes
 	$(CC) $(CFLAGS) src/chmod.c -o chmod
-  $(CC) $(CFLAGS) src/date.c -o date
+	$(CC) $(CFLAGS) src/date.c -o date
 
 clean:
 	rm -rf $(UTILS)
