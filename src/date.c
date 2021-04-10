@@ -1,6 +1,6 @@
 /*
   ezcore - date utility
-  written by Thomas Sirack (tsirack@gmail.com)
+  written by Thomas Sirack (tsirack@protonmail.com)
 
   compliant to:
   https://pubs.opengroup.org/onlinepubs/9699919799/utilities/date.html

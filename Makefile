@@ -1,6 +1,6 @@
 ## Makefile for EZCore
 ## Made by ethancodes2020 <ethanatchley2006@gmail.com>
-## and Thomas Sirack <tsirack@gmail.com>
+## and Thomas Sirack <tsirack@protonmail.com>
 ## and Nikita Nikiforov (amdbtw) <efifb@yandex.ru>
 
 CFLAGS := -g -Wall -O3

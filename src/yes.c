@@ -1,5 +1,6 @@
 /*
   EZCore - yes utility
+  written by Thomas Sirack (tsirack@protonmail.com)
 */
 
 #include <stdio.h>
