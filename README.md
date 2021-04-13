@@ -6,6 +6,7 @@ EZCore is meant to be light, small, and an alternative to GNU Coreutils.
 To build EZCore, run the following commands:
 
 ```
+$ ./configure --prefix=/usr
 $ make
 ```
 
