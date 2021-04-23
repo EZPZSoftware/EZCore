@@ -6,11 +6,13 @@ EZCore is meant to be light, small, and an alternative to GNU Coreutils.
 To build EZCore, run the following commands:
 
 ```
-$ ./configure --prefix=/usr
-$ make
+$ mkdir -v build
+$ cd build
+$ meson --prefix=/usr ..
+$ ninja
+$ ninja install
 ```
 
-`make install` will be added soon.
 
 # Command status
 | Command | Status |
