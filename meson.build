@@ -1,0 +1,5 @@
+project('ezcore', 'c')
+executable('uname', 'src/uname.c')
+executable('yes', 'src/link.c')
+executable('chmod', 'src/chmod.c')
+executable('link', 'src/link.c')
